@@ -1,0 +1,28 @@
+Ollama is a platform and tool for running large language models (LLMs) locally on your own machine or private servers. Unlike cloud-based AI like OpenAI’s GPT models, Ollama allows you to download models and run them entirely on your hardware, giving you full control, privacy, and flexibility.
+Think of Ollama as a local AI assistant manager: it handles the models, lets you query them via APIs, and allows you to integrate AI into your apps—without sending your data to the cloud.
+
+Key Features:
+
+1. Local Model Execution
+Models run on your own computer (CPU/GPU) or private servers.
+No internet connection is required once the model is downloaded.
+Your data never leaves your machine → excellent for privacy and security.
+
+2. Supports Multiple LLMs
+You can run popular open-source models like LLaMA, Mistral, and other community models.
+Some versions even allow running OpenAI’s open-weight GPT models locally.
+
+3. Easy API Interface
+Ollama provides a simple REST API interface so that your apps (Spring Boot, Python, etc.) can send prompts and get responses.
+Works similarly to cloud-based AI APIs, making it easy to switch.
+
+4.Cross-platform
+Works on Mac, Linux, and Windows.
+Supports both CPU and GPU for faster inference.
+
+5. Privacy-first
+Since everything is local, sensitive data never leaves your system.
+Great for healthcare, finance, or enterprise apps with strict compliance requirements.
+
+6. Open-source friendly
+You can experiment with new models, fine-tune them, or combine multiple models for specialized applications.
