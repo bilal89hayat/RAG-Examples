@@ -1,3 +1,6 @@
+This example is using ollama that runs locally !!!
+
+
 To run Ollama locally for your Spring Boot RAG app, first install Ollama on Linux by downloading the `.deb` package (`wget https://ollama.com/downloads/ollama-latest.deb`) and
 installing it (`sudo dpkg -i ollama-latest.deb && sudo apt-get install -f`), 
 then verify with `ollama --version`. 
