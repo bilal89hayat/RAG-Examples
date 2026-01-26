@@ -1,0 +1,9 @@
+To run Ollama locally for your Spring Boot RAG app, first install Ollama on Linux by downloading the `.deb` package (`wget https://ollama.com/downloads/ollama-latest.deb`) and
+installing it (`sudo dpkg -i ollama-latest.deb && sudo apt-get install -f`), 
+then verify with `ollama --version`. 
+Next, install the model your app requires (e.g., `llama3`) using `ollama pull llama3` and confirm it appears in `ollama list`. 
+Start the Ollama server on the port your app expects (`http://localhost:11434`) by running `ollama serve --port 11434` and keep this terminal open. 
+You can test the server with `curl http://localhost:11434`. 
+Finally, in a separate terminal, navigate to your Spring Boot project folder and run `./mvnw spring-boot:run`; 
+Your app will now successfully call Ollama to embed text and generate responses. 
+If you want to use a different model, just change the model name in your code to one listed in `ollama list` and restart the app.
